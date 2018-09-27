@@ -1,0 +1,49 @@
+
+<div class="header">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <h1>Burgers Collection</h1>
+</div>
+
+
+<div class="container-wrapper">
+
+    <div class="card left">
+        <h3>Burgers to eat</h3>
+        {{#each burgers}}
+            {{#unless devoured}}
+            <div class="burger-card">
+                <div class="name">{{name}}</div>
+                <div class="button"><button class="eat-burger" data-id="{{this.id}}">Let's Eat it!</button></div>
+            </div>
+            {{/unless}}
+        {{/each}}
+
+    </div>
+
+
+    <div class="card center">
+        <h3>Add a burger</h3>
+            <div class="form">
+                <input type="text" id="new-burger" class="input">
+                <button class="new-burger">Submit</button>
+            </div>
+
+
+    </div>
+
+
+
+    <div class="card right">
+
+        <h3>Ate these burgers</h3>
+        {{#each burgers}}
+            {{#if devoured}}
+            <div class="burger-card">
+                {{name}}
+                {{!-- <button class="eat-burger" data-id="{{this.id}}">Devour It</button> --}}
+            </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+</div>

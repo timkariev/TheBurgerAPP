@@ -1,0 +1,84 @@
+.body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://wallpapercave.com/wp/wp1924065.jpg") ;
+    background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+h1{ 
+    text-align: center;
+    color: rgb(255, 21, 0);
+  font-family: Audiowide;
+    font-size: 100px ;
+    transition: all 0.5s;
+    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+    
+    
+
+
+}
+
+
+@-webkit-keyframes neon5    {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+  }
+
+  @keyframes neon5 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+  }
+
+.container-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    padding: 2vh;
+    margin: 3vh;
+    min-width: 25%;
+    background-color: whitesmoke;
+}
+
+.burger-card{
+    padding: 0.5vh;
+    margin: 0.5vh;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    text-align: center;
+}
+
+.input{
+    width: 70%;
+}
+
+h3{
+    text-align: center;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .container-wrapper{
+        flex-direction: column;
+    }
+}
+
